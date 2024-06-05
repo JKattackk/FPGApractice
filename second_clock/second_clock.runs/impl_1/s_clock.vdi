@@ -1,0 +1,80 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Jun  4 15:06:02 2024
+# Process ID: 88920
+# Current directory: A:/_important/adjustable_timer/adjustable_timer.runs/impl_1
+# Command line: vivado.exe -log s_clock.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source s_clock.tcl -notrace
+# Log file: A:/_important/adjustable_timer/adjustable_timer.runs/impl_1/s_clock.vdi
+# Journal file: A:/_important/adjustable_timer/adjustable_timer.runs/impl_1\vivado.jou
+# Running On: Google-Home-Mini1285, OS: Windows, CPU Frequency: 3800 MHz, CPU Physical cores: 12, Host memory: 34276 MB
+#-----------------------------------------------------------
+source s_clock.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 511.004 ; gain = 217.012
+Command: link_design -top s_clock -part xc7s25csga324-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7s25csga324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 886.918 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [A:/_important/adjustable_timer/adjustable_timer.srcs/constrs_1/new/arty_S7_25.xdc]
+Finished Parsing XDC File [A:/_important/adjustable_timer/adjustable_timer.srcs/constrs_1/new/arty_S7_25.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1013.648 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1017.672 ; gain = 506.668
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s25'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net s_clock_out_OBUF has multiple drivers: led_buff_reg/Q, and led_buff_reg__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net timer_count[0] has multiple drivers: timer_count_reg[0]__0/Q, and timer_count_reg[0]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net timer_count[10] has multiple drivers: timer_count_reg[10]/Q, and timer_count_reg[10]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net timer_count[11] has multiple drivers: timer_count_reg[11]/Q, and timer_count_reg[11]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net timer_count[12] has multiple drivers: timer_count_reg[12]__0/Q, and timer_count_reg[12]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net timer_count[13] has multiple drivers: timer_count_reg[13]/Q, and timer_count_reg[13]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net timer_count[14] has multiple drivers: timer_count_reg[14]__0/Q, and timer_count_reg[14]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net timer_count[15] has multiple drivers: timer_count_reg[15]__0/Q, and timer_count_reg[15]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net timer_count[16] has multiple drivers: timer_count_reg[16]/Q, and timer_count_reg[16]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net timer_count[17] has multiple drivers: timer_count_reg[17]__0/Q, and timer_count_reg[17]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net timer_count[18] has multiple drivers: timer_count_reg[18]__0/Q, and timer_count_reg[18]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net timer_count[19] has multiple drivers: timer_count_reg[19]/Q, and timer_count_reg[19]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net timer_count[1] has multiple drivers: timer_count_reg[1]__0/Q, and timer_count_reg[1]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net timer_count[20] has multiple drivers: timer_count_reg[20]/Q, and timer_count_reg[20]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net timer_count[21] has multiple drivers: timer_count_reg[21]/Q, and timer_count_reg[21]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net timer_count[22] has multiple drivers: timer_count_reg[22]__0/Q, and timer_count_reg[22]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net timer_count[23] has multiple drivers: timer_count_reg[23]__0/Q, and timer_count_reg[23]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net timer_count[24] has multiple drivers: timer_count_reg[24]__0/Q, and timer_count_reg[24]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net timer_count[25] has multiple drivers: timer_count_reg[25]/Q, and timer_count_reg[25]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net timer_count[26] has multiple drivers: timer_count_reg[26]__0/Q, and timer_count_reg[26]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net timer_count[2] has multiple drivers: timer_count_reg[2]__0/Q, and timer_count_reg[2]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net timer_count[3] has multiple drivers: timer_count_reg[3]__0/Q, and timer_count_reg[3]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net timer_count[4] has multiple drivers: timer_count_reg[4]/Q, and timer_count_reg[4]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net timer_count[5] has multiple drivers: timer_count_reg[5]/Q, and timer_count_reg[5]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net timer_count[6] has multiple drivers: timer_count_reg[6]__0/Q, and timer_count_reg[6]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net timer_count[7] has multiple drivers: timer_count_reg[7]/Q, and timer_count_reg[7]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net timer_count[8] has multiple drivers: timer_count_reg[8]__0/Q, and timer_count_reg[8]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net timer_count[9] has multiple drivers: timer_count_reg[9]/Q, and timer_count_reg[9]__0/Q.
+INFO: [Project 1-461] DRC finished with 28 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.936 . Memory (MB): peak = 1039.332 ; gain = 21.660
+INFO: [Common 17-83] Releasing license: Implementation
+12 Infos, 0 Warnings, 0 Critical Warnings and 29 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Tue Jun  4 15:06:19 2024...
